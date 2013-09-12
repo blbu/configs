@@ -4,7 +4,7 @@
 CONFIG_DIR=/home/cshome/coursework/241/setup/2013
 
 if [ -r $CONFIG_DIR/bashrc ]; then
-   . $CONFIG_DIR/bashrc
+  . $CONFIG_DIR/bashrc
 fi
 
 # aliases

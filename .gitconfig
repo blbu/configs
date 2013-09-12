@@ -1,12 +1,12 @@
 [user]
-	email = blake.j.burgess@gmail.com
-	name = Blake Burgess
+  email = blake.j.burgess@gmail.com
+  name = Blake Burgess
 [credential]
-	helper = cache --time=3600
+  helper = cache --time=3600
 [alias]
-	co = checkout
-	ci = commit
+  co = checkout
+  ci = commit
   st = status --untracked-files=no
-	br = branch
-	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	pom = pull origin master
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  pom = pull origin master
