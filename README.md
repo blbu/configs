@@ -1,4 +1,4 @@
 configs
 =======
 
-my configs for vim, git, etc
+My configs for vim, git, etc. You are welcome to use them.
