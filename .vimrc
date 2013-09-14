@@ -1,7 +1,12 @@
+syntax on
+filetype indent on
 set shiftwidth=2
 set tabstop=2
 set expandtab
-filetype indent on
-syntax on
+set ai
 set incsearch
+set hlsearch
 set ruler
+set backspace=indent,eol,start
+filetype on
+execute pathogen#infect()
