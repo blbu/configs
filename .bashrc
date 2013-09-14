@@ -11,6 +11,10 @@ fi
 alias ls='ls -G'
 alias ll='ls -l'
 alias la='ll -a'
+alias rm='rm -i'
+alias mv='mv -i'
+alias vi='vim'
+alias v='vim'
 
 # aliases for COMP212
 alias 212ssh='ssh sapphire'
