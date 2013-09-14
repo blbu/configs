@@ -9,4 +9,4 @@
   st = status --untracked-files=no
   br = branch
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-  pom = pull origin master
+  pullom = pull origin master
