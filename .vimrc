@@ -24,6 +24,9 @@ nnoremap - ddp
 "Push current line to the line above
 nnoremap _ ddkP
 
+" Easy way to reindent file
+nnoremap <leader>= gg=G
+
 "Make it easier to make it easier to edit text
 "Edit ~/.vimrc on the go
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
