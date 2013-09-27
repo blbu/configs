@@ -1,0 +1,5 @@
+Control+Alt+T = New Terminal
+Only really use to when starting for the day --- use Control+Shift+N to get a 
+new terminal when already have one up.
+Alt+W = Switch Windows of an Application
+Useful to bounce between left and right terminal. Faster than Alt+Escape.
