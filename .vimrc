@@ -19,6 +19,11 @@ set foldmethod=indent
 let mapleader=","
 let localmapleader="\\"
 
+"Push current line to the line beneath
+nnoremap - ddp
+"Push current line to the line above
+nnoremap _ ddkP
+
 "Make it easier to make it easier to edit text
 "Edit ~/.vimrc on the go
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -30,11 +35,19 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 "Add single quotes around current word
 nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 
-"Comment out selection in old C
+"Comment out this section in C
 nnoremap <leader>* mz{jI/*<esc>}kA*/<esc>`z
 
-"Heh
-command WQ wq
-command Wq wq
-command W w
-command Q q
+"Want to map W to w, Q to q, etc
+
+"Save's your left hand
+inoremap jk <esc>
+inoremap <esc> <nop>
+inoremap <c-c> <nop>
+inoremap <c-[> <nop>
+
+"Arrow keys are bad
+noremap OD <nop>
+noremap OC <nop>
+noremap OB <nop>
+noremap OA <nop>
