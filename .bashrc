@@ -9,6 +9,9 @@ fi
 
 # aliases
 alias ls='ls -G'
+if [[ $OSTYPE == "linux-gnu" ]]; then
+  alias ls='ls --color=auto'
+fi
 alias ll='ls -l'
 alias la='ll -a'
 alias rm='rm -i'
@@ -16,6 +19,15 @@ alias mv='mv -i'
 alias vi='vim'
 alias v='vim'
 
+#experimental aliases
+alias cd..='cd ..'
+alias c='cd'
+alias l='ls'
+alias tree='tree -C'
+
 # aliases for COMP212
 alias 212ssh='ssh sapphire'
 alias 212sftp='sftp sapphire'
+
+#mkdir and cd in a single command -- doesn't support spaces in names
+function mkdircd () { mkdir -p "$@" && cd $_; }
