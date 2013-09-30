@@ -19,7 +19,7 @@ alias mv='mv -i'
 alias vi='vim'
 alias v='vim'
 
-#experimental aliases
+# experimental aliases
 alias cd..='cd ..'
 alias c='cd'
 alias l='ls'
@@ -29,5 +29,8 @@ alias tree='tree -C'
 alias 212ssh='ssh sapphire'
 alias 212sftp='sftp sapphire'
 
-#mkdir and cd in a single command -- doesn't support spaces in names
+# mkdir and cd in a single command -- doesn't support spaces in names
 function mkdircd () { mkdir -p "$@" && cd $_; }
+
+# set a simple prompt
+PS1='\w\$'
