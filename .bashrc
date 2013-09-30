@@ -33,4 +33,4 @@ alias 212sftp='sftp sapphire'
 function mkdircd () { mkdir -p "$@" && cd $_; }
 
 # set a simple prompt
-PS1='\w\$'
+PS1='\w\$ '
