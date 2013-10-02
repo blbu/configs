@@ -54,3 +54,6 @@ noremap OD <nop>
 noremap OC <nop>
 noremap OB <nop>
 noremap OA <nop>
+
+"Force width of 80 (unless HTML? todo...)
+set textwidth=80

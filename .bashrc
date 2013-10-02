@@ -14,8 +14,10 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
 fi
 alias ll='ls -l'
 alias la='ll -a'
-alias rm='rm -i'
+alias rm='rm -i --preserve-root'
 alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
 alias vi='vim'
 alias v='vim'
 
@@ -24,6 +26,7 @@ alias cd..='cd ..'
 alias c='cd'
 alias l='ls'
 alias tree='tree -C'
+alias clean='make clean'
 
 # aliases for COMP212
 alias 212ssh='ssh sapphire'

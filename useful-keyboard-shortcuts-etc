@@ -1,0 +1,37 @@
+##Keyboard Shortcuts
+I like to have these set. Haven't run into too many conflicts.
+
+Control+Alt+T -> New Terminal
+Only really use to when starting for the day
+(use Control+Shift+N to get a new terminal when already have one up.)
+
+Alt+W -> Switch Windows of Current Application
+Useful to bounce between left and right terminal.
+Faster than Alt+Escape, which moves between all Application Windows.
+
+##!-related bash things
+!!
+  repeat last command
+!xyz
+  repeat last command beginning with xyz
+!xyz:p
+  print the command that would be executed
+  (adds to history --- execute with !!)
+
+##Some Bash Movements
+(^ means "the control key")
+^a
+  go to start of line
+^e
+  go to end of line
+^k
+  erase until end of line
+^u
+  erase until start of line
+^w
+  erase word
+
+##A smide of Bash Expansion
+touch {a,b,c}.c
+  touches a.c, b.b, c.c
+  you can nest these --- be careful though
