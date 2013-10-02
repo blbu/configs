@@ -28,12 +28,18 @@ alias l='ls'
 alias tree='tree -C'
 alias clean='make clean'
 
+# compose nav and listing
+cl() { c "$@"; l; }
+
 # aliases for COMP212
 alias 212ssh='ssh sapphire'
 alias 212sftp='sftp sapphire'
 
 # mkdir and cd in a single command -- doesn't support spaces in names
-function mkdircd () { mkdir -p "$@" && cd $_; }
+mkdircd() { mkdir -p "$@" && cd $_; }
 
 # set a simple prompt
 PS1='\w\$ '
+
+# make it easier to edit this file (and apply the changes)
+alias eb='v ~/.bashrc; . ~/.bashrc;'
