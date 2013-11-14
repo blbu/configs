@@ -57,3 +57,6 @@ noremap OA <nop>
 
 "Force width of 80 (unless HTML? todo...)
 set textwidth=80
+
+"split screen and shift the right file to the left a bit; comfy editing
+nnoremap <leader>fs :vsplit <Return> <bar> <c-w>l <bar> 40<c-w>>
