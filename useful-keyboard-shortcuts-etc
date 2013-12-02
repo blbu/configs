@@ -31,7 +31,12 @@ Faster than Alt+Escape, which moves between all Application Windows.
 ^w
   erase word
 
-##A smide of Bash Expansion
+##A smidge of Bash Expansion
 touch {a,b,c}.c
   touches a.c, b.b, c.c
   you can nest these --- be careful though
+
+##Vim pasting trick
+:set paste
+  Now you can paste without the autoindenting breaking everything
+  turn it off with :set nopaste
