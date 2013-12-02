@@ -56,7 +56,17 @@ noremap OB <nop>
 noremap OA <nop>
 
 "Force width of 80 (unless HTML? todo...)
-set textwidth=80
+set textwidth=0
 
-"split screen and shift the right file to the left a bit; comfy editing
+"split screen and shift the right file to the left a bit; lazy editing
 nnoremap <leader>fs :vsplit <Return> <bar> <c-w>l <bar> 40<c-w>>
+
+"Put current line just above the middle for lazy viewing
+nnoremap <leader>z 10jzz10k
+
+"HTML tag insertions
+nnoremap <leader>h2 I<h2><esc>A</h2><esc>
+nnoremap <leader>td Bi<td><esc>Ea</td><esc>
+
+"Block commenting in bash
+nnoremap <leader>#} 0<c-V>}kI#<esc>
