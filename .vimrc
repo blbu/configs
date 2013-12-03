@@ -25,7 +25,7 @@ nnoremap - ddp
 nnoremap _ ddkP
 
 " Easy way to reindent file
-nnoremap <leader>= gg=G
+nnoremap <leader>= gg=G``
 
 "Make it easier to make it easier to edit text
 "Edit ~/.vimrc on the go
@@ -43,7 +43,7 @@ nnoremap <leader>* mz{jI/*<esc>}kA*/<esc>`z
 
 "Want to map W to w, Q to q, etc
 
-"Save's your left hand
+"Saves your left hand
 inoremap jk <esc>
 inoremap <esc> <nop>
 inoremap <c-c> <nop>
@@ -58,10 +58,10 @@ noremap OA <nop>
 "Force width of 80 (unless HTML? todo...)
 set textwidth=0
 
-"split screen and shift the right file to the left a bit; lazy editing
+"split screen and shift the right file to the left a bit; comfy editing
 nnoremap <leader>fs :vsplit <Return> <bar> <c-w>l <bar> 40<c-w>>
 
-"Put current line just above the middle for lazy viewing
+"Put current line just above the middle for comfy viewing
 nnoremap <leader>z 10jzz10k
 
 "HTML tag insertions
@@ -70,3 +70,6 @@ nnoremap <leader>td Bi<td><esc>Ea</td><esc>
 
 "Block commenting in bash
 nnoremap <leader>#} 0<c-V>}kI#<esc>
+
+"Making a checklist
+nnoremap <leader>[<space>]} mz0<c-V>}I[ ]<esc>`z
