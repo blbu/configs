@@ -73,3 +73,6 @@ nnoremap <leader>#} 0<c-V>}kI#<esc>
 
 "Making a checklist
 nnoremap <leader>[<space>]} mz0<c-V>}I[ ]<esc>`z
+
+"Paste currently-yanked line over top of current line
+nnoremap <leader>p pkdd
