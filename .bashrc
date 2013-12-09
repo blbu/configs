@@ -41,6 +41,7 @@ mkdircd() { mkdir -p "$@" && cd $_; }
 
 # set a simple prompt
 PS1='\w[32m\$[0m '
+
 # make it easier to edit this file (and apply the changes)
 alias eb='v ~/.bashrc; . ~/.bashrc;'
 
@@ -86,7 +87,33 @@ ppopd() {
   builtin popd &>/dev/null
 }
 
+#Overloaded navigation aliases
 alias cd='ppushd'
 alias back='ppopd'
 alias flip='pushd_builtin'
 alias \?='dirs'
+
+#Stop clobbering history when closing multiple shells
+shopt -s histappend
+shopt -s cmdhist
+PROMPT_COMMAND='history -a'
+
+#Require two Ctrl-D to close shell
+export IGNOREEOF=1
+
+#Try to use history to quickly open recently used Vim file
+#alias x='v $(history -p !v:$)'
+
+#tdot fn -- toggle dot at start of filename (i.e, hide/unhide)
+td() {
+  while [[ $1 != "" ]]
+  do
+    if [[ ${1:0:1} == "." ]]
+    then
+      mv ${1} "./$(basename ${1:1})"
+    else
+      mv ${1} "./.$(basename ${1})"
+    fi
+    shift
+  done
+}

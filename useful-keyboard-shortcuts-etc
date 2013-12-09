@@ -40,3 +40,7 @@ touch {a,b,c}.c
 :set paste
   Now you can paste without the autoindenting breaking everything
   turn it off with :set nopaste
+
+##iTerm 2 use META keys (word-by-word nagivation)
+iTerm2 --> Preferences --> Profiles --> Keys -->
+Left option key acts as Meta+Esc
