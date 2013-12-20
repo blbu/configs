@@ -55,6 +55,7 @@ alias s='st'
 alias add='git add'
 alias ci='git commit'
 alias pushom='git pushom'
+alias gd='git diff'
 
 # my ll -- [j]ust [l]ist the files!
 jl() {
