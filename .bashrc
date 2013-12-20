@@ -13,7 +13,7 @@ if [[ $OSTYPE == "linux-gnu" ]]; then
   alias ls='ls --color=auto'
 fi
 alias ll='ls -l'
-alias la='ll -a'
+alias la='ls -a'
 alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
