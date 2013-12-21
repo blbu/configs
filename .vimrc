@@ -1,8 +1,8 @@
 syntax on
 filetype indent on
-set shiftwidth=2
-set tabstop=2
-set expandtab
+set shiftwidth=4
+set tabstop=4
+"set expandtab
 set ai
 set incsearch
 set hlsearch
@@ -40,6 +40,9 @@ nnoremap <leader>' viw<esc>a'<esc>hbi'<esc>lel
 
 "Comment out this section in C
 nnoremap <leader>* mz{jI/*<esc>}kA*/<esc>`z
+
+"Comment out this line in C
+nnoremap <leader>/ I//<esc>j
 
 "Want to map W to w, Q to q, etc
 

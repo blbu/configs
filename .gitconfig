@@ -9,6 +9,8 @@
     st = status --untracked-files=no
     stu = status
     br = branch
-    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=local
+    histrel = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=relative
+    histreltoday = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=relative --since "yesterday"
     pullom = pull origin master
     pushom = push origin master
