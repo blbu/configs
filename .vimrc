@@ -19,13 +19,16 @@ set foldmethod=indent
 let mapleader=","
 let localmapleader="\\"
 
+"View more with space
+nnoremap <space> 
+
 "Push current line to the line beneath
 nnoremap - ddp
 "Push current line to the line above
 nnoremap _ ddkP
 
 " Easy way to reindent file
-nnoremap <leader>= gg=G``
+nnoremap <leader>= gg=G``zz
 
 "Make it easier to make it easier to edit text
 "Edit ~/.vimrc on the go
@@ -90,3 +93,6 @@ nnoremap <leader>i( %a)<esc>``i(<esc>
 
 "Surround a word with whitespace
 nnoremap <leader>i<space> i<space><esc>Wa<space><esc>
+
+"Unix as an IDE
+nnoremap <leader>m :!make<return>
