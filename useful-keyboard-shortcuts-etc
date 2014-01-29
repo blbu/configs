@@ -9,6 +9,13 @@ Alt+W -> Switch Windows of Current Application
 Useful to bounce between left and right terminal.
 Faster than Alt+Escape, which moves between all Application Windows.
 
+###Mac OS X
+I have been using this as my primary workstation O/S. Globally-recognised
+shortcuts are very handy.
+
+Control+Left-arrow-key -> Move left one Desktop
+Control+Right-arrow-key -> Move right one Desktop
+
 ##!-related bash things
 !!
   repeat last command
@@ -17,6 +24,33 @@ Faster than Alt+Escape, which moves between all Application Windows.
 !xyz:p
   print the command that would be executed
   (adds to history --- execute with !!)
+
+###!$
+!$
+  gets the last argument of the previous command. I use this far too often,
+especially when shuttling a single file between multiple iteractive GUIs.
+
+## '^^' substitution
+~$ echo "moo"
+moo
+~$ ^moo^bark
+echo "bark"
+bark
+~$
+
+## n-th argument
+~$ echo "here" "are some" "arguments"
+here are some arguments
+~$ echo !!:2
+echo "are some"
+are some
+~$
+
+Accepts ranges, negative indices, etc.
+!!:-2
+!!:2-3
+
+It's relatively self-explanatory.
 
 ##Some Bash Movements
 (^ means "the control key")
@@ -36,7 +70,7 @@ touch {a,b,c}.c
   touches a.c, b.b, c.c
   you can nest these --- be careful though
 
-##Vim pasting trick
+##Vim pasting 'trick'
 :set paste
   Now you can paste without the autoindenting breaking everything
   turn it off with :set nopaste

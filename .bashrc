@@ -28,6 +28,7 @@ alias l='ls'
 alias tree='tree -C'
 alias clean='make clean'
 alias cleanmake='clean; make'
+alias m='make'
 
 # compose nav and listing
 cl() { c "$@"; l; }
@@ -118,3 +119,4 @@ td() {
     shift
   done
 }
+alias vlast='v $(ls -t | cut -d " " -f 1 | head -n 1)'
