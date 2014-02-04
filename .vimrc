@@ -47,6 +47,10 @@ nnoremap <leader>* mz{jI/*<esc>}kA*/<esc>`z
 "Comment out this line in C
 nnoremap <leader>/ I//<esc>j
 
+"Save excessive keystrokes in command mode
+nnoremap : <nop>
+nnoremap ; :
+
 "Want to map W to w, Q to q, etc
 
 "Saves your left hand
@@ -95,4 +99,4 @@ nnoremap <leader>i( %a)<esc>``i(<esc>
 nnoremap <leader>i<space> i<space><esc>Wa<space><esc>
 
 "Unix as an IDE
-nnoremap <leader>m :!make<return>
+nnoremap <leader>m :make<return>
