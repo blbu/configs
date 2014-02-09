@@ -41,7 +41,7 @@ alias 212sftp='sftp sapphire'
 mkdircd() { mkdir -p "$@" && cd $_; }
 
 # set a simple prompt
-PS1='\w[32m\$[0m '
+PS1='[32m\w\$[0m '
 
 # make it easier to edit this file (and apply the changes)
 alias eb='v ~/.bashrc; . ~/.bashrc;'
