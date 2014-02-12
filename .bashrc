@@ -41,7 +41,15 @@ alias 212sftp='sftp sapphire'
 mkdircd() { mkdir -p "$@" && cd $_; }
 
 # set a simple prompt
-PS1='\w[32m\$[0m '
+if [[ $HOSTNAME == "nitro.otago.ac.nz" ]]
+then
+	PS1='[34m\h>\w\$[0m '
+elif [[ $HOSTNAME == "hex.otago.ac.nz" ]]
+then
+	PS1='[33m\h>\w\$[0m '
+else
+	PS1='[32m\w\$[0m '
+fi
 
 # make it easier to edit this file (and apply the changes)
 alias eb='v ~/.bashrc; . ~/.bashrc;'

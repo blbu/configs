@@ -12,10 +12,7 @@ filetype on
 "Not using any plugins at the moment
 "execute pathogen#infect()
 
-"Lazy method for using folds
-set foldmethod=indent
-
-"Leaders for moar shortcuts
+"Leaders for more shortcuts
 let mapleader=","
 let localmapleader="\\"
 
