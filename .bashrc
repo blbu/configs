@@ -43,7 +43,7 @@ mkdircd() { mkdir -p "$@" && cd $_; }
 # set a simple prompt
 if [[ $HOSTNAME == "nitro.otago.ac.nz" ]]
 then
-	PS1='[34m\h>\w\$[0m '
+	PS1='[31m\h>\w\$[0m '
 elif [[ $HOSTNAME == "hex.otago.ac.nz" ]]
 then
 	PS1='[33m\h>\w\$[0m '
