@@ -40,16 +40,23 @@ alias 212sftp='sftp sapphire'
 # mkdir and cd in a single command -- doesn't support spaces in names
 mkdircd() { mkdir -p "$@" && cd $_; }
 
-# set a simple prompt
+# PROMPT
+# Add colour and hostname if on other networks
 if [[ $HOSTNAME == "nitro.otago.ac.nz" ]]
 then
-	PS1='[31m\h>\w\$[0m '
+	PS1='[31m\h>\w'
 elif [[ $HOSTNAME == "hex.otago.ac.nz" ]]
 then
-	PS1='[33m\h>\w\$[0m '
+	PS1='[33m\h>\w'
 else
-	PS1='[32m\w\$[0m '
+	PS1='[32m\w'
 fi
+## Add bg jobs prompt if non-zero (thanks http://stackoverflow.com/questions/12646917/)
+PS1=$PS1'$([ \j -gt 0 ] && echo [\j jobs])'
+## Finally, end the colour sequence
+PS1=$PS1'\$ [0m'
+# END PROMPT
+
 
 # make it easier to edit this file (and apply the changes)
 alias eb='v ~/.bashrc; . ~/.bashrc;'
