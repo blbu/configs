@@ -84,8 +84,6 @@ nnoremap <leader>[<space>]} mz0<c-V>}I[ ]<esc>`z
 "Paste currently-yanked line over top of current line
 nnoremap <leader>p pkdd
 
-set mouse=a
-
 "Delete a set of brackets
 nnoremap <leader>d( %x``x
 
